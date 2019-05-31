@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
 import Icons from './SVG_Icons'
+export {CountryFlags} from './SVG_Icons/SVGCountryFlags'
 
 export default class ExampleComponent extends Component {
   static propTypes = {
@@ -22,7 +23,6 @@ export default class ExampleComponent extends Component {
       size,
       fill
     } = this.props
-
     return (
       <div >
         <Icons height={height} width={width} name={name} color={color} size={size} fill={fill} />

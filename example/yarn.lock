@@ -6407,10 +6407,10 @@ react-scripts@^1.1.4:
   optionalDependencies:
     fsevents "^1.1.3"
 
-react-svg-jsx-icons@^1.0.11:
-  version "1.0.11"
-  resolved "https://registry.yarnpkg.com/react-svg-jsx-icons/-/react-svg-jsx-icons-1.0.11.tgz#3a94598cc281b6ff029d56b8d9d1288536b20434"
-  integrity sha512-fppHFxGEdjzXaBTIOgB2yvF/5Iio7C6oy8OflnvCX0e1+6oAh20IbCuSpWQKlUaxYAe2pESJgKI3J/5gMDUkjQ==
+react-svg-jsx-icons@^1.0.30:
+  version "1.0.30"
+  resolved "https://registry.yarnpkg.com/react-svg-jsx-icons/-/react-svg-jsx-icons-1.0.30.tgz#a7fe225efbf2d6190c1b76fa5bb53f0eccaf0f2d"
+  integrity sha512-2pYLvLHgJSs0CcXsRHtT6UZupjRyhACUH+pjwfsaTLSfAvup1GXxyZdWAW0C7l3aB7dFbTrR+EmC+nz+UBoD1A==
 
 react@^16.4.1:
   version "16.8.6"
