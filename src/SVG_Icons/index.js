@@ -5,20 +5,24 @@ import World from './JSX_Icons/world'
 import Warning from './JSX_Icons/warning'
 import Water from './JSX_Icons/water'
 import Blur from './JSX_Icons/blur'
+import AccountUser from './JSX_Icons/account-user'
 import At from './JSX_Icons/at'
 import Attachment from './JSX_Icons/attachment'
 import AddContact from './JSX_Icons/add-contact'
 import AlarmClock from './JSX_Icons/alarm-clock'
 import BarChart from './JSX_Icons/bar-chart'
 import BlackEnvelope from './JSX_Icons/black-envelope'
+import Blocked from './JSX_Icons/blocked'
 import Book from './JSX_Icons/book'
 import Building from './JSX_Icons/building'
 import Calendar from './JSX_Icons/calendar'
 import Chat from './JSX_Icons/chat'
-import Check from './JSX_Icons/check'
+import Close from './JSX_Icons/close'
+import OutlineCheck from './JSX_Icons/outline-check'
 import CheckBook from './JSX_Icons/checkbook'
 import Comment from './JSX_Icons/comment'
 import Cross from './JSX_Icons/cross'
+import ArrowDown from './JSX_Icons/arrow-down'
 import Departure from './JSX_Icons/departure'
 import Doctor from './JSX_Icons/doctor'
 import DollarSymbol from './JSX_Icons/dollar-symbol'
@@ -58,6 +62,7 @@ import Send from './JSX_Icons/send'
 import Star from './JSX_Icons/star'
 import StopWatch from './JSX_Icons/stopwatch'
 import Stop from './JSX_Icons/stop'
+import Check from './JSX_Icons/check'
 import TimeLine from './JSX_Icons/timeline'
 import Update from './JSX_Icons/update'
 import View from './JSX_Icons/view'
@@ -68,6 +73,7 @@ import DoubleCheck from './JSX_Icons/double-checking'
 import Money from './JSX_Icons/money'
 import Priority from './JSX_Icons/priority'
 import SuitCaseCheck from './JSX_Icons/suitcase-with-check-symbol'
+import SendButton from './JSX_Icons/send-button'
 import User from './JSX_Icons/user'
 import UserWarning from './JSX_Icons/user-warning'
 import Chatting from './JSX_Icons/chatting'
@@ -313,6 +319,22 @@ import Yemen from './FlagIcons/yemen'
 import Zambia from './FlagIcons/zambia'
 import Zimbabwe from './FlagIcons/zimbabwe'
 
+import Search from './JSX_Icons/search'
+import ArrowUp from './JSX_Icons/arrow-up'
+import Clock from './JSX_Icons/clock'
+import Clip from './JSX_Icons/clip'
+import Location from './JSX_Icons/location'
+import ClipBoardText from './JSX_Icons/clipboard-text'
+import TicketAccount from './JSX_Icons/ticket-account'
+import ChatDocument from './JSX_Icons/chat-document'
+import ChatGallery from './JSX_Icons/chat-gallery'
+import ChatAudio from './JSX_Icons/chat-audio'
+import ChatMap from './JSX_Icons/chat-map'
+import ChatContact from './JSX_Icons/chat-contact'
+import Status from './JSX_Icons/status'
+import Tags from './JSX_Icons/tags'
+import Add from './JSX_Icons/add'
+
 export default class ReturnSvgIcon extends Component {
     static propTypes = {
       name: PropTypes.string,
@@ -332,6 +354,36 @@ export default class ReturnSvgIcon extends Component {
       const fill = this.props.fill ? this.props.fill : 'black'
 
       switch (name) {
+        case 'add':
+          return (<Add height={height} width={width} color={color} size={size} fill={fill} />)
+        case 'tags':
+          return (<Tags height={height} width={width} color={color} size={size} fill={fill} />)
+        case 'status':
+          return (<Status height={height} width={width} color={color} size={size} fill={fill} />)
+        case 'chat-gallery':
+          return (<ChatGallery height={height} width={width} color={color} size={size} fill={fill} />)
+        case 'chat-audio':
+          return (<ChatAudio height={height} width={width} color={color} size={size} fill={fill} />)
+        case 'chat-map':
+          return (<ChatMap height={height} width={width} color={color} size={size} fill={fill} />)
+        case 'chat-contact':
+          return (<ChatContact height={height} width={width} color={color} size={size} fill={fill} />)
+        case 'chat-document':
+          return (<ChatDocument height={height} width={width} color={color} size={size} fill={fill} />)
+        case 'ticket-account':
+          return (<TicketAccount height={height} width={width} color={color} size={size} fill={fill} />)
+        case 'clipboard-text':
+          return (<ClipBoardText height={height} width={width} color={color} size={size} fill={fill} />)
+        case 'location':
+          return (<Location height={height} width={width} color={color} size={size} fill={fill} />)
+        case 'clip':
+          return (<Clip height={height} width={width} color={color} size={size} fill={fill} />)
+        case 'clock':
+          return (<Clock height={height} width={width} color={color} size={size} fill={fill} />)
+        case 'arrow-up':
+          return (<ArrowUp height={height} width={width} color={color} size={size} fill={fill} />)
+        case 'search':
+          return (<Search height={height} width={width} color={color} size={size} fill={fill} />)
         case 'world':
           return (<World height={height} width={width} color={color} size={size} fill={fill} />)
         case 'wifi':
@@ -344,6 +396,8 @@ export default class ReturnSvgIcon extends Component {
           return (<StopWatch height={height} width={width} color={color} size={size} fill={fill} />)
         case 'stop':
           return (<Stop height={height} width={width} color={color} size={size} fill={fill} />)
+        case 'account-circle':
+          return (<AccountUser height={height} width={width} color={color} size={size} fill={fill} />)
         case 'at':
           return (<At height={height} width={width} color={color} size={size} fill={fill} />)
         case 'attachment':
@@ -358,14 +412,20 @@ export default class ReturnSvgIcon extends Component {
           return (<BlackEnvelope height={height} width={width} color={color} size={size} fill={fill} />)
         case 'book':
           return (<Book height={height} width={width} color={color} size={size} fill={fill} />)
+        case 'cancel':
+          return (<Blocked height={height} width={width} color={color} size={size} fill={fill} />)
+        case 'arrow-down':
+          return (<ArrowDown height={height} width={width} color={color} size={size} fill={fill} />)
         case 'building':
           return (<Building height={height} width={width} color={color} size={size} fill={fill} />)
         case 'calendar':
           return (<Calendar height={height} width={width} color={color} size={size} fill={fill} />)
         case 'chat':
           return (<Chat height={height} width={width} color={color} size={size} fill={fill} />)
-        case 'check':
-          return (<Check height={height} width={width} color={color} size={size} fill={fill} />)
+        case 'close':
+          return (<Close height={height} width={width} color={color} size={size} fill={fill} />)
+        case 'outline-check':
+          return (<OutlineCheck height={height} width={width} color={color} size={size} fill={fill} />)
         case 'checkbook':
           return (<CheckBook height={height} width={width} color={color} size={size} fill={fill} />)
         case 'comment':
@@ -416,7 +476,7 @@ export default class ReturnSvgIcon extends Component {
           return (<Menu height={height} width={width} color={color} size={size} fill={fill} />)
         case 'mobile':
           return (<Mobile height={height} width={width} color={color} size={size} fill={fill} />)
-        case 'new-product':
+        case 'new-box':
           return (<NewProduct height={height} width={width} color={color} size={size} fill={fill} />)
         case 'paste-file':
           return (<PasteFile height={height} width={width} color={color} size={size} fill={fill} />)
@@ -446,6 +506,8 @@ export default class ReturnSvgIcon extends Component {
           return (<Send height={height} width={width} color={color} size={size} fill={fill} />)
         case 'star':
           return (<Star height={height} width={width} color={color} size={size} fill={fill} />)
+        case 'check':
+          return (<Check height={height} width={width} color={color} size={size} fill={fill} />)
         case 'timeline':
           return (<TimeLine height={height} width={width} color={color} size={size} fill={fill} />)
         case 'update':
@@ -458,12 +520,14 @@ export default class ReturnSvgIcon extends Component {
           return (<WashingMachine height={height} width={width} color={color} size={size} fill={fill} />)
         case 'circle':
           return (<Circle height={height} width={width} color={color} size={size} fill={fill} />)
-        case 'double-checking':
+        case 'check-outline':
           return (<DoubleCheck height={height} width={width} color={color} size={size} fill={fill} />)
         case 'money':
           return (<Money height={height} width={width} color={color} size={size} fill={fill} />)
         case 'priority':
           return (<Priority height={height} width={width} color={color} size={size} fill={fill} />)
+        case 'send-button':
+          return (<SendButton height={height} width={width} color={color} size={size} fill={fill} />)
         case 'suitcase-with-check-symbol':
           return (<SuitCaseCheck height={height} width={width} color={color} size={size} fill={fill} />)
         case 'user':

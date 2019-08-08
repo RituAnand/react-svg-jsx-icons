@@ -62,7 +62,7 @@ export default class CountryFlags extends Component {
       <div>
         {
           CountryFlags.map((item,index)=>(
-            <div>
+            <div style={{display:'flex',flexDirection:'row'}}>
               <Icon name={item.Name}  height={'5%'} width={'5%'} />
               <div>{item.Country}</div>
               <div>{item.CountryCode}</div>

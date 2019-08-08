@@ -23,11 +23,8 @@ export default class ExampleComponent extends Component {
       size,
       fill
     } = this.props
-    
     return (
-      <div >
-        <Icons height={height} width={width} name={name} color={color} size={size} fill={fill} />
-      </div>
+      <Icons height={height} width={width} name={name} color={color} size={size} fill={fill} />
     )
   }
 }

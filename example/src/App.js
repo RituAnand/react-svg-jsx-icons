@@ -5,53 +5,113 @@ import {CountryFlags} from 'react-svg-jsx-icons'
 
 export default class App extends Component {
   render () {
+    let status= [
+      {'Name': 'account-circle'},
+      {'Name': 'new-box',},
+      {'Name': 'poll'},
+      {'Name': 'cancel'},
+      {'Name': 'check',},
+      {'Name': 'alarm-clock'},
+      {'Name': 'clip'},
+      {'Name': 'bar-chart',},
+      {'Name': 'black-envelope'},
+      {'Name': 'book'},
+      {'Name': 'close',},
+      {'Name': 'dollar-symbol'},
+      {'Name': 'event'},
+      {'Name': 'exclamation',},
+      {'Name': 'eye'},
+      {'Name': 'friends'},
+      {'Name': 'information',},
+      {'Name': 'light-bulb'},
+      {'Name': 'plane'},
+      {'Name': 'profits',},
+      {'Name': 'reader'},
+      {'Name': 'refresh'},
+      {'Name': 'reload',},
+      {'Name': 'restaurant-cutlery'},
+      {'Name': 'star'},
+      {'Name': 'priority'},
+      {'Name': 'user'},
+      {'Name': 'user-warning'},
+      {'Name': 'add'}
+  ]
     console.log("country flags ",CountryFlags)
     return (
-      <div>
-        {
+      <div style={{display:'flex', flexDirection:'column'}}>
+        {/* {
           CountryFlags.map((item,index)=>(
-            <div>
+            <div style={{display:'flex',flexDirection:'row'}}>
             <Icon name={item.Name}  height={'5%'} width={'5%'} />
             <div>{item.Country}</div>
             <div>{item.CountryCode}</div>
             </div>
           ))
-        }
-        {/* <Icon name={'world'}  fill={'red'}/>
-        <Icon name={'wifi'} height={'1.5%'} width ={'1.5%'} color ={'blue'} size={'4%'} fill={'red'} />
-        <Icon name={'water'}  size={'5%'} />
-        <Icon name={'warning'} height={'1.5%'} width ={'1.5%'} color ={'red'}  size={'4%'} />
-        <Icon height={'1.5%'} width ={'1.5%'} color ={'red'}  size={'4%'} />
+        } */}
+        {/* {
+          status.map((item,index)=>(
+            <div style={{display:'flex'}}>
+            <Icon name={item.Name}  height={'5%'} width={'5%'} fill={'black'}/>
+            </div>
+          ))
+        } */}
+        <Icon name={'add'} height={'5%'} width ={'5%'} size={'4%'} fill={'black'}/>
+        <Icon name={'chat-gallery'} height={'25%'} width ={'25%'} size={'4%'} />
+        <Icon name={'chat-audio'} height={'25%'} width ={'25%'} size={'4%'} />
+        <Icon name={'chat-map'} height={'25%'} width ={'25%'} size={'4%'} />
+        <Icon name={'chat-contact'} height={'25%'} width ={'25%'}  />
+        <Icon name={'chat-document'} height={'25%'} width ={'25%'}  />
+        <Icon name={'status'} height={'25px'} width ={'25px'}  />
+        <Icon name={'tags'} height={'25px'} width ={'25px'}  />
+        <Icon name={'clipboard-text'} height={'25px'} width ={'25px'}  fill={'green'} style={{right:0}}/>
+        <Icon name={'world'} height={'25px'} width ={'25px'}  fill={'red'} style={{right:0}}/>
+        <Icon name={'wifi'} height={'25px'} width ={'25px'} color ={'blue'} size={'4%'} fill={'red'} />
+        <Icon name={'water'} height={'25px'} width ={'25px'} size={'5%'} />
+        <Icon name={'warning'} height={'25px'} width ={'25px'}color ={'red'}  size={'4%'} />
+        <Icon  height={'25px'} width ={'25px'} color ={'red'}  size={'4%'} />
 
-        <Icon name={'add-contact'} height={'1.5%'} width ={'1.5%'} color ={'blue'} size={'4%'} fill={'red'} />
-        <Icon name={'alarm-clock'} height={'1.5%'} width ={'1.5%'} color ={'red'}  size={'4%'} />
-        <Icon height={'1.5%'} width ={'1.5%'} color ={'red'}  size={'4%'} fill={'pink'}/>
-        <Icon name={'attachment'} height={'1.5%'} width ={'1.5%'} fill={'red'}/>
-        <Icon name={'at'} height={'1.5%'} width ={'1.5%'} color ={'red'}  size={'4%'} />
+        <Icon name={'account-circle'} height={'5%'} width ={'5%'} color ={'blue'} size={'4%'} fill={'red'} />
 
-        <Icon name={'bar-chart'} height={'1.5%'} width ={'1.5%'} color ={'blue'} size={'4%'} fill={'red'} />
-        <Icon name={'black-envelope'} height={'1.5%'} width ={'1.5%'} color ={'red'}  size={'4%'} />
-        <Icon height={'1.5%'} width ={'1.5%'} color ={'red'}  size={'4%'} fill={'pink'}/>
-        <Icon name={'book'} height={'1.5%'} width ={'1.5%'} fill={'red'}/>
+        <Icon name={'new-box'} height={'5%'} width ={'5%'} color ={'red'}  size={'4%'} />
+        <Icon name={'alarm-clock'} height={'5%'} width ={'5%'} color ={'red'}  size={'4%'} />
+        <Icon name={'clock'} height={'5%'} width ={'5%'} color ={'red'}  size={'4%'} />
+        <Icon height={'1.5%'} height={'5%'} width ={'5%'} color ={'red'}  size={'4%'} fill={'green'}/>
+        <Icon name={'attachment'} height={'15%'} width ={'15%'} fill={'red'}/>
+        <Icon name={'clip'} height={'15%'} width ={'15%'} fill={'red'}/>
+        <Icon name={'location'} height={'15%'} width ={'15%'} fill={'red'}/>
+        <Icon name={'at'} height={'5%'} width ={'5%'} color ={'red'}  size={'4%'} />
+
+        <Icon name={'bar-chart'} height={'5%'} width ={'5%'} color ={'blue'} size={'4%'} fill={'red'} />
+        <Icon name={'black-envelope'} height={'5%'} width ={'5%'} color ={'black'}  size={'4%'} />
+        <Icon height={'5%'} width ={'5%'} color ={'red'}  size={'4%'} fill={'black'}/>
+        <Icon name={'book'} height={'5%'} width ={'5%'} fill={'red'}/>
+        <Icon name={'cancel'} height={'5%'} width ={'5%'} color ={'red'}  size={'4%'} />
         <Icon name={'building'} height={'1.5%'} width ={'1.5%'} color ={'red'}  size={'4%'} />
 
         <Icon name={'calendar'} height={'1.5%'} width ={'1.5%'} color ={'blue'} size={'4%'} fill={'red'} />
+        <Icon name={'send-button'} height={'5%'} width ={'5%'} color ={'blue'} size={'4%'} fill={'red'} />
         <Icon name={'chat'} height={'1.5%'} width ={'1.5%'} color ={'red'}  size={'4%'} />
-        <Icon name={'check'} height={'1.5%'} width ={'1.5%'} fill={'red'}/>
+        <Icon name={'close'} height={'5%'} width ={'5%'} color ={'black'}  size={'4%'} />
+        <Icon name={'outline-check'} height={'5%'} width ={'5%'} fill={'red'}/>
+        <Icon name={'check'} height={'5%'} width ={'5%'} fill={'red'}/>
         <Icon name={'checkbook'} height={'1.5%'} width ={'1.5%'} color ={'red'}  size={'4%'} />
-        <Icon name={'comment'} height={'1.5%'} width ={'1.5%'} color ={'red'}  size={'4%'} fill={'pink'}/>
+        <Icon name={'comment'} height={'1.5%'} width ={'1.5%'} color ={'red'}  size={'4%'} fill={'black'}/>
         <Icon name={'cross'} height={'1.5%'} width ={'1.5%'} fill={'red'}/>
 
         <Icon name={'departure'} height={'1.5%'} width ={'1.5%'} color ={'red'}  size={'4%'} />
         <Icon name={'doctor'} height={'5%'} width ={'5%'} color ={'red'}  size={'4%'} />
-        <Icon name={'dollar-symbol'} height={'1.5%'} width ={'1.5%'} color ={'red'}  size={'4%'} fill={'pink'}/>
+        <Icon name={'dollar-symbol'} height={'1.5%'} width ={'1.5%'} color ={'red'}  size={'4%'} fill={'black'}/>
         <Icon name={'down-arrow'} height={'1.5%'} width ={'1.5%'} fill={'red'}/>
-        <Icon name={'event'} height={'1.5%'} width ={'1.5%'} fill={'red'}/>
-        <Icon name={'exclamation'} height={'1.5%'} width ={'1.5%'} color ={'red'}  size={'4%'} />
-        <Icon name={'eye'} height={'1.5%'} width ={'1.5%'} fill={'red'}/>
 
-        <Icon name={'feedback'} height={'1.5%'} width ={'1.5%'} color ={'red'}  size={'4%'} fill={'red'}/>
-        <Icon name={'friends'} height={'1.5%'} width ={'1.5%'} color ={'red'}  size={'4%'} fill={'pink'}/>
+        <Icon name={'arrow-down'} height={'5%'} width ={'5%'} fill={'black'}/>
+        <Icon name={'arrow-up'} height={'5%'} width ={'5%'} fill={'black'}/>
+        <Icon name={'event'} height={'5%'} width ={'5%'} fill={'red'}/>
+        <Icon name={'exclamation'} height={'5%'} width ={'5%'} color ={'red'}  size={'4%'} />
+        <Icon name={'eye'} height={'5%'} width ={'5%'} fill={'red'}/>
+        <Icon name={'search'} height={'5%'} width ={'5%'} fill={'red'}/>
+
+        <Icon name={'feedback'} height={'5%'} width ={'5%'} color ={'red'}  size={'4%'} fill={'red'}/>
+        <Icon name={'friends'} height={'1.5%'} width ={'1.5%'} color ={'red'}  size={'4%'} fill={'black'}/>
         <Icon name={'full-moon'} height={'1.5%'} width ={'1.5%'} fill={'red'}/>
         <Icon name={'house-black-silhouette-without-door'} height={'1.5%'} width ={'1.5%'} fill={'red'}/>
         <Icon name={'icon'} height={'1.5%'} width ={'1.5%'} color ={'red'}  size={'4%'} />
@@ -59,51 +119,51 @@ export default class App extends Component {
         <Icon name={'invoice'} height={'1.5%'} width ={'1.5%'} fill={'red'}/>
         <Icon name={'justice'} height={'1.5%'} width ={'1.5%'} color ={'red'}  size={'4%'} />
 
-        <Icon name={'leftarrow'} height={'1.5%'} width ={'1.5%'} color ={'red'}  size={'4%'} fill={'red'}/>
-        <Icon name={'light-bulb'} height={'1.5%'} width ={'1.5%'} color ={'red'}  size={'4%'} fill={'pink'}/>
-        <Icon name={'line-chart'} height={'1.5%'} width ={'1.5%'} fill={'red'}/>
-        <Icon name={'man-standing-with-arms-up'} height={'1.5%'} width ={'1.5%'} fill={'red'}/>
-        <Icon name={'megaphone'} height={'1.5%'} width ={'1.5%'} color ={'red'}  size={'4%'} />
-        <Icon name={'menu'} height={'1.5%'} width ={'1.5%'} fill={'red'}/>
-        <Icon name={'mobile'} height={'1.5%'} width ={'1.5%'} fill={'red'}/>
-        <Icon name={'new-product'} height={'1.5%'} width ={'1.5%'} color ={'red'}  size={'4%'} />
-        <Icon name={'paste-file'} height={'1.5%'} width ={'1.5%'} color ={'red'}  size={'4%'} fill={'red'}/>
-        <Icon name={'phone-receiver'} height={'1.5%'} width ={'1.5%'} color ={'red'}  size={'4%'} fill={'pink'}/>
-        <Icon name={'plane'} height={'1.5%'} width ={'1.5%'} fill={'red'}/>
-        <Icon name={'poll'} height={'1.5%'} width ={'1.5%'} fill={'red'}/>
-        <Icon name={'profits'} height={'1.5%'} width ={'1.5%'} color ={'red'}  size={'4%'} />
-        <Icon name={'reader'} height={'1.5%'} width ={'1.5%'} fill={'red'}/>
-        <Icon name={'reflect'} height={'1.5%'} width ={'1.5%'} fill={'red'}/>
-        <Icon name={'refresh'} height={'1.5%'} width ={'1.5%'} color ={'red'}  size={'4%'} />
-        <Icon name={'reload'} height={'1.5%'} width ={'1.5%'} color ={'red'}  size={'4%'} fill={'red'}/>
-        <Icon name={'restaurant-cutlery'} height={'1.5%'} width ={'1.5%'} color ={'red'}  size={'4%'} fill={'pink'}/>
-        <Icon name={'restore'} height={'1.5%'} width ={'1.5%'} color ={'red'}  size={'4%'} fill={'pink'}/>
+        <Icon name={'leftarrow'} height={'5%'} width ={'5%'} color ={'red'}  size={'4%'} fill={'red'}/>
+        <Icon name={'light-bulb'} height={'5%'} width ={'5%'} color ={'red'}  size={'4%'} fill={'black'}/>
+        <Icon name={'line-chart'} height={'5%'} width ={'5%'} fill={'red'}/>
+        <Icon name={'man-standing-with-arms-up'} height={'5%'} width ={'1.5%'} fill={'red'}/>
+        <Icon name={'megaphone'} height={'1.5%'} width ={'5%'} color ={'red'}  size={'4%'} />
+        <Icon name={'menu'} height={'5%'} width ={'5%'} fill={'red'}/>
+        <Icon name={'mobile'} height={'5%'} width ={'5%'} fill={'red'}/>
+        <Icon name={'new-box'} height={'5%'} width ={'5%'} color ={'red'}  size={'4%'} />
+        <Icon name={'paste-file'} height={'5%'} width ={'5%'} color ={'red'}  size={'4%'} fill={'red'}/>
+        <Icon name={'phone-receiver'} height={'5%'} width ={'5%'} color ={'red'}  size={'4%'} fill={'black'}/>
+        <Icon name={'plane'} height={'5%'} width ={'5%'} fill={'red'}/>
+        <Icon name={'poll'} height={'5%'} width ={'5%'} fill={'red'}/>
+        <Icon name={'profits'} height={'5%'} width ={'5%'} color ={'red'}  size={'4%'} />
+        <Icon name={'reader'} height={'5%'} width ={'5%'} fill={'red'}/>
+        <Icon name={'reflect'} height={'5%'} width ={'5%'} fill={'red'}/>
+        <Icon name={'refresh'} height={'5%'} width ={'5%'} color ={'red'}  size={'4%'} />
+        <Icon name={'reload'} height={'5%'} width ={'5%'} color ={'red'}  size={'4%'} fill={'red'}/>
+        <Icon name={'restaurant-cutlery'} height={'5%'} width ={'1.5%'} color ={'red'}  size={'4%'} fill={'black'}/>
+        <Icon name={'restore'} height={'5%'} width ={'5%'} color ={'red'}  size={'4%'} fill={'black'}/>
 
-        <Icon name={'scale-symbol'} height={'1.5%'} width ={'1.5%'} color ={'red'}  size={'4%'} fill={'red'}/>
-        <Icon name={'send'} height={'1.5%'} width ={'1.5%'} color ={'red'}  size={'4%'} fill={'pink'}/>
-        <Icon name={'star'} height={'1.5%'} width ={'1.5%'} fill={'red'}/>
-        <Icon name={'timeline'} height={'1.5%'} width ={'1.5%'} fill={'red'}/>
-        <Icon name={'update'} height={'1.5%'} width ={'1.5%'} color ={'red'}  size={'4%'} />
-        <Icon name={'view'} height={'1.5%'} width ={'1.5%'} fill={'red'}/>
-        <Icon name={'wallet'} height={'1.5%'} width ={'1.5%'} fill={'red'}/>
-        <Icon name={'WashingMachine'} height={'1.5%'} width ={'1.5%'} fill={'red'}/>
+        <Icon name={'scale-symbol'} height={'5%'} width ={'5%'} color ={'red'}  size={'4%'} fill={'red'}/>
+        <Icon name={'send'} height={'5%'} width ={'5%'} color ={'red'}  size={'4%'} fill={'black'}/>
+        <Icon name={'star'} height={'5%'} width ={'5%'} fill={'red'}/>
+        <Icon name={'timeline'} height={'1.5%'} width ={'5%'} fill={'red'}/>
+        <Icon name={'update'} height={'5%'} width ={'5%'} color ={'red'}  size={'4%'} />
+        <Icon name={'view'} height={'5%'} width ={'1.5%'} fill={'red'}/>
+        <Icon name={'wallet'} height={'5%'} width ={'5%'} fill={'red'}/>
+        <Icon name={'WashingMachine'} height={'5%'} width ={'5%'} fill={'red'}/>
 
-        <Icon name={'circle'} height={'1.5%'} width ={'1.5%'}  />
-        <Icon name={'double-checking'} height={'1.5%'} width ={'1.5%'}  />
-        <Icon name={'money'} height={'1.5%'} width ={'1.5%'} />
-        <Icon name={'priority'} height={'1.5%'} width ={'1.5%'} />
-        <Icon name={'suitcase-with-check-symbol'} height={'1.5%'} width ={'1.5%'}   />
-        <Icon name={'user'} height={'1.5%'} width ={'1.5%'} />
-        <Icon name={'user-warning'} height={'1.5%'} width ={'1.5%'} />
-        <Icon name={'chatting'} height={'1.5%'} width ={'1.5%'}    />
-        <Icon name={'justify'} height={'1.5%'} width ={'1.5%'} />
-        <Icon name={'playlist'} height={'1.5%'} width ={'1.5%'} />
-        <Icon name={'radar'} height={'1.5%'} width ={'1.5%'} />
-        <Icon name={'rgb'} height={'1.5%'} width ={'1.5%'} />
-        <Icon name={'security-on'} height={'1.5%'} width ={'1.5%'} /> */}
+        <Icon name={'circle'} height={'5%'} width ={'5%'}  />
+        <Icon name={'check-outline'} height={'5%'} width ={'5%'}  />
+        <Icon name={'money'} height={'5%'} width ={'5%'} />
+        <Icon name={'priority'} height={'5%'} width ={'5%'} />
+        <Icon name={'suitcase-with-check-symbol'} height={'5%'} width ={'5%'}   />
+        <Icon name={'user'} height={'5%'} width ={'5%'} />
+        <Icon name={'user-warning'} height={'5%'} width ={'5%'} />
+        <Icon name={'chatting'} height={'5%'} width ={'5%'}    />
+        <Icon name={'justify'} height={'5%'} width ={'5%'} />
+        <Icon name={'playlist'} height={'5%'} width ={'5%'} />
+        <Icon name={'radar'} height={'5%'} width ={'5%'} />
+        <Icon name={'rgb'} height={'5%'} width ={'5%'} />
+        <Icon name={'security-on'} height={'5%'} width ={'5%'} /> 
 
-{/* 
-        <Icon name={'afghanistan'} height={'1.5%'} width ={'1.5%'}  />
+
+        {/* <Icon name={'afghanistan'} height={'1.5%'} width ={'1.5%'}  />
         <Icon name={'albania'} height={'1.5%'} width ={'1.5%'}  />
         <Icon name={'algeria'} height={'1.5%'} width ={'1.5%'} />
         <Icon name={'american-samoa'} height={'1.5%'} width ={'1.5%'} />
